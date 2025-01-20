@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --main-color:#f1efee;
+    --Seconde-color:#f7f7f7;
+    --Seconde-color-trans:#f7f7f7a1;
+    --hover-text-color:#8e8d8c;
+}
+
+.global-transition{
+    transition: all;
+    transition-duration: 0.5s;
+}
+
+.newfont{
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.newfontReg{
+   
+      font-family: "Oswald", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    
+}
+
+
+@layer components{
+    .sidebar-list{
+        @apply font-[500] text-[20px]  global-transition hover:bg-white p-3
+    }
+    .Break-Sections{
+        @apply absolute top-[380px] bg-[var(--Seconde-color)] h-[300px] -z-10 w-full
+    }
+    /* About Me Section */
+    .experience-text{
+        @apply p-5 text-center bg-[var(--Seconde-color)] rounded-md md:max-w-[200px] max-sm:w-full md:h-[180px]   ml-auto mr-auto md:border-l-2 
+    }
+    .experience-icon{
+        @apply  ml-auto mr-auto border-2 rounded-full border-black text-[50px] p-2
+    }
+    .icons{
+        @apply bg-[var(--Seconde-color)] text-[60px] p-3 rounded-xl
+    }
+    .icon-text{
+        @apply text-center newfontReg
+    }
+    /* Portfolio */
+    .portfolio-div{
+        @apply md:w-[200px] max-sm:w-full cursor-pointer relative
+    }
+    .portfolio-img{
+        @apply w-full 
+    }
+    .portfolio-text-div{
+        @apply absolute  p-1 bg-[var(--Seconde-color-trans)] w-full   global-transition 
+    }
+}
+
+
+.round{
+    border-radius: 0px 0px 80px 80px;
+}
+
+
+.download-arrow-animation{
+    animation: updownarrow;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes updownarrow {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(6px);
+
+    }
+}
+
