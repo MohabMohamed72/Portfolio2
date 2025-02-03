@@ -70,7 +70,7 @@ const About = () => {
                     <p className='bg-white rounded-3xl p-1 px-3 newfontReg text-black w-fit ml-auto mr-auto absolute top-[-20px] left-1/2 -translate-x-1/2 '>Skills</p>
                 </div></Element>
 
-                <div className='flex flex-wrap gap-6  mt-10 justify-center'>
+                <div className='flex flex-wrap gap-6  mt-10 justify-center ml-auto mr-auto max-w-[600px]'>
                     <div>
                         <FaHtml5  className='icons text-orange-400' />
                         <p className='icon-text'>HTML</p>
