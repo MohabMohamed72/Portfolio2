@@ -41,7 +41,7 @@ const About = () => {
                     <p className='bg-white rounded-3xl p-1 px-3 newfontReg text-black w-fit ml-auto mr-auto absolute top-[-20px] left-1/2 -translate-x-1/2 '>Experience</p>
                 </div></Element>
 
-                <div className='flex max-sm:flex-col  gap-6  mt-10'>
+                <div className='flex max-sm:flex-col justify-center  gap-6  mt-10'>
                         
                     <div className='flex flex-col gap-3 '>
                         <GiTeacher  className='experience-icon'/>
