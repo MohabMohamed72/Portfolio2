@@ -4,6 +4,7 @@ import Ecommerce from '../../assets/imgs/Ecommerce.png'
 import Am from '../../assets/imgs/Am.png'
 import Kasper from '../../assets/imgs/kasper.png'
 import Dashboard from '../../assets/imgs/Dashboard.png'
+import Vue from '../../assets/imgs/ecom.png'
 
 const Portfolio = () => {
     const [filmpire ,setfilmpire] = useState(false)
@@ -11,6 +12,7 @@ const Portfolio = () => {
     const [am ,setam] = useState(false)
     const [kasper ,setkasper] = useState(false)
     const [dashboard ,setdashboard] = useState(false)
+    const [vue ,setvue] = useState(false)
 
   return (
     <div  className='flex gap-5 flex-wrap  mt-20 justify-center pb-20'>
@@ -87,6 +89,20 @@ const Portfolio = () => {
             <div className={`${dashboard? 'bottom-0 h-full ':'h-0 hidden'} portfolio-text-div`}>
                 <h1 className='text-[15px] font-[500] newfont'>Dashboard</h1>
                 <p className='text-[11px] newfontReg'>Dashboard Page Using Html And Tailwind Only</p>
+            </div>
+        </div>
+        <div className='portfolio-div'
+         onMouseEnter={()=>{
+            setvue(true)
+            }}
+            onMouseLeave={()=>{
+                setvue(false)
+            }}
+            onClick={()=>{window.open('https://ecommerce759.netlify.app/' , '_blank')}}>
+            <img src={Vue} alt="" className='portfolio-img' />
+            <div className={`${vue? 'bottom-0 h-full ':'h-0 hidden'} portfolio-text-div`}>
+                <h1 className='text-[15px] font-[500] newfont'>Ecommerce Vue</h1>
+                <p className='text-[11px] newfontReg'>Ecommerce Vue js Website</p>
             </div>
         </div>
 

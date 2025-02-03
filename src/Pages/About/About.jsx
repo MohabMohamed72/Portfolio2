@@ -16,6 +16,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiRedux } from "react-icons/si";
 import { CgShapeHalfCircle } from "react-icons/cg";
 import { Link, Element } from 'react-scroll';
+import { IoLogoVue } from "react-icons/io5";
 
 const About = () => {
   return (
@@ -25,7 +26,7 @@ const About = () => {
         
         <Element name='#eduction'><div id='eduction' className='relative mt-10'>
             <hr className='bg-black' />
-            <p className='bg-white rounded-3xl p-1 px-3 newfontReg text-black w-fit ml-auto mr-auto absolute top-[-20px] left-1/2 -translate-x-1/2 -rotate-12'>Education</p>
+            <p className='bg-white rounded-3xl p-1 px-3 newfontReg text-black w-fit ml-auto mr-auto absolute top-[-20px] left-1/2 -translate-x-1/2 '>Education</p>
         </div></Element>
 
         <div className='flex flex-col gap-5'>
@@ -37,7 +38,7 @@ const About = () => {
         <div>
                 <Element name='#experince'><div id='experince' className='relative mt-20'>
                     <hr className='bg-black' />
-                    <p className='bg-white rounded-3xl p-1 px-3 newfontReg text-black w-fit ml-auto mr-auto absolute top-[-20px] left-1/2 -translate-x-1/2 -rotate-12'>Experience</p>
+                    <p className='bg-white rounded-3xl p-1 px-3 newfontReg text-black w-fit ml-auto mr-auto absolute top-[-20px] left-1/2 -translate-x-1/2 '>Experience</p>
                 </div></Element>
 
                 <div className='flex max-sm:flex-col  gap-6  mt-10'>
@@ -66,7 +67,7 @@ const About = () => {
         <div>
                  <Element name='#skills'><div id='skills' className='relative mt-20'>
                     <hr className='bg-black' />
-                    <p className='bg-white rounded-3xl p-1 px-3 newfontReg text-black w-fit ml-auto mr-auto absolute top-[-20px] left-1/2 -translate-x-1/2 -rotate-12'>Skills</p>
+                    <p className='bg-white rounded-3xl p-1 px-3 newfontReg text-black w-fit ml-auto mr-auto absolute top-[-20px] left-1/2 -translate-x-1/2 '>Skills</p>
                 </div></Element>
 
                 <div className='flex flex-wrap gap-6  mt-10 justify-center'>
@@ -123,6 +124,10 @@ const About = () => {
                     <div className='flex flex-col items-center'>
                         <GiArtificialIntelligence className='icons' />
                         <p className='icon-text'>Machine<br />Learning</p>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <IoLogoVue className='icons text-green-600' />
+                        <p className='icon-text'>Vue Js</p>
                     </div>
 
                 </div>     

@@ -11,6 +11,9 @@ export const GlobalSlice = createSlice({
         },
         HideSidebar:(state)=>{
             return {...state ,SidebarVisable:false }
+        },
+        toggelsidebar:(state)=>{
+            return {...state ,SidebarVisable:!SidebarVisable }
         }
     }
 })
