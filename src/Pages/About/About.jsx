@@ -17,7 +17,7 @@ import { SiRedux } from "react-icons/si";
 import { CgShapeHalfCircle } from "react-icons/cg";
 import { Link, Element } from 'react-scroll';
 import { IoLogoVue } from "react-icons/io5";
-
+import { SiTypescript } from "react-icons/si";
 const About = () => {
   return (
     <div  className='ml-auto mt-auto'>
@@ -43,13 +43,17 @@ const About = () => {
 
                 <div className='flex max-sm:flex-col justify-center  gap-6  mt-10'>
                         
+                    <div className='flex flex-col gap-3'>
+                        <MdOutlineWebAsset  className='experience-icon'/>
+                        <p className='experience-text'>Working As Frontend Developer vue js </p>
+                    </div>
                     <div className='flex flex-col gap-3 '>
                         <GiTeacher  className='experience-icon'/>
                         <p className='experience-text'>Worked As Instructor Of Arduino, C Programming, Python, Machine Learning, Computer Vision, AI, Scratch For 1 Year</p>
                     </div>
                     <div className='flex flex-col gap-3'>
                         <MdOutlineWebAsset  className='experience-icon'/>
-                        <p className='experience-text'>Experience In Html, Css, JavaScript, React, TailWind, Git, Redux</p>
+                        <p className='experience-text'>Experience In Html, Css, JavaScript,TypeScript ,SCSS React, TailWind, Git, Redux</p>
                     </div>
                     <div className='flex flex-col gap-3'>
                         <MdCastForEducation  className='experience-icon'/>
@@ -128,6 +132,10 @@ const About = () => {
                     <div className='flex flex-col items-center'>
                         <IoLogoVue className='icons text-green-600' />
                         <p className='icon-text'>Vue Js</p>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <SiTypescript className='icons text-blue-500' />
+                        <p className='icon-text'>TypeScript</p>
                     </div>
 
                 </div>     
