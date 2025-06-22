@@ -84,7 +84,7 @@ const Portfolio = () => {
             onMouseLeave={()=>{
                 setdashboard(false)
             }}
-            onClick={()=>{window.open(' https://kasperpage.netlify.app/' , '_blank')}}>
+            onClick={()=>{window.open(' https://dasborad.netlify.app/' , '_blank')}}>
             <img src={Dashboard} alt="" className='portfolio-img' />
             <div className={`${dashboard? 'bottom-0 h-full ':'h-0 hidden'} portfolio-text-div`}>
                 <h1 className='text-[15px] font-[500] newfont'>Dashboard</h1>
