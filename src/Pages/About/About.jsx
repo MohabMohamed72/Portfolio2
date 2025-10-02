@@ -18,6 +18,10 @@ import { CgShapeHalfCircle } from "react-icons/cg";
 import { Link, Element } from 'react-scroll';
 import { IoLogoVue } from "react-icons/io5";
 import { SiTypescript } from "react-icons/si";
+import { SiNuxtdotjs } from "react-icons/si";
+import { BsFiletypeScss } from "react-icons/bs";
+
+
 const About = () => {
   return (
     <div  className='ml-auto mt-auto'>
@@ -45,7 +49,7 @@ const About = () => {
                         
                     <div className='flex flex-col gap-3'>
                         <MdOutlineWebAsset  className='experience-icon'/>
-                        <p className='experience-text'>Working As Frontend Developer vue js </p>
+                        <p className='experience-text'>Working As Frontend Developer vue js 1 year </p>
                     </div>
                     <div className='flex flex-col gap-3 '>
                         <GiTeacher  className='experience-icon'/>
@@ -132,6 +136,14 @@ const About = () => {
                     <div className='flex flex-col items-center'>
                         <IoLogoVue className='icons text-green-600' />
                         <p className='icon-text'>Vue Js</p>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <SiNuxtdotjs  className='icons text-green-600' />
+                        <p className='icon-text'>Nuxt Js</p>
+                    </div>
+                    <div className='flex flex-col items-center'>
+                        <BsFiletypeScss  className='icons text-red-500' />
+                        <p className='icon-text'>SCSS</p>
                     </div>
                     <div className='flex flex-col items-center'>
                         <SiTypescript className='icons text-blue-500' />
